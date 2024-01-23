@@ -1,0 +1,19 @@
+h1{
+    text-align: center;
+    background-color: antiquewhite;
+    color:blueviolet;
+}
+.head-custom{
+    height: 20px;
+}
+.head-custom1{
+    height: 40px;
+}
+.nav-item1{
+   position: absolute;
+   left: 1150px;
+   color: white;
+}
+.nav-item{
+    color: white;
+}

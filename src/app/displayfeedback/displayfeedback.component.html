@@ -1,0 +1,26 @@
+<app-adminnavbar></app-adminnavbar>
+<div class="container">
+    <table class="table table-bordered table-hover">
+        <thead>
+            <tr>
+
+                <th>User ID</th>
+                <th>PlaceId</th>
+                <th>FeedBack</th>
+                <th>Date Time</th>
+                
+                <!-- Add more table headers for other properties if needed -->
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let feedback of dataSource">
+                <td>{{ feedback.userId }}</td>
+                <td>{{ feedback.placeId }}</td>
+                <td>{{ feedback.feedbackText }}</td>
+                <td class="tourdate">{{ feedback.dateTime }}</td>
+
+                
+            </tr>
+        </tbody>
+    </table>
+</div>

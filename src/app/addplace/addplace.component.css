@@ -1,0 +1,21 @@
+.card{
+   
+    position: absolute;
+    left: 380px;
+    top:100px;
+    height: 500px;
+    width: 500px;
+   
+}
+button{
+    border-radius: 10px;
+    margin: 10px;
+    width: 150px;
+}
+h4{
+    text-align: center;
+    color: blue;
+    position: absolute;
+    top: 10px;
+    left: 200px;
+}

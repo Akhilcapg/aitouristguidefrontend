@@ -1,0 +1,28 @@
+<app-adminnavbar></app-adminnavbar>
+<div class="container">
+    <table class="table table-bordered table-hover">
+        <thead>
+            <tr>
+
+                <th>User ID</th>
+                <th>UserName</th>
+                <th>Address</th>
+                <th>MobileNumber</th>
+                <th>Email</th>
+                
+                <!-- Add more table headers for other properties if needed -->
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let user of users">
+                <td>{{ user.id }}</td>
+                <td>{{ user.fullName }}</td>
+                <td>{{ user.address }}</td>
+                <td>{{user.mobileNumber}}</td>
+                <td>{{ user.email }}</td>
+
+                
+            </tr>
+        </tbody>
+    </table>
+</div>

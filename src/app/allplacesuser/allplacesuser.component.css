@@ -1,0 +1,11 @@
+.img-thumbnail{
+    width: 320px;
+    padding:7.5px;
+    text-align: left;
+    
+}
+.row{
+    position: absolute;
+    left: 10px;
+    padding: 10px;
+}

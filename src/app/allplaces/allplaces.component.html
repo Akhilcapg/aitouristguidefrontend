@@ -1,0 +1,42 @@
+
+<app-adminnavbar></app-adminnavbar>
+<div class="text-center mt-3">
+    <button mat-raised-button color="primary" class="m-2" routerLink="/addplace">Add Place</button>
+  </div>
+  <div class="container">
+   
+
+    <table class="table table-bordered table-hover">
+        <thead class="thead-dark">
+            <tr>
+                <th scope="col">Id</th>
+                <th scope="col">Place Name</th>
+                <th scope="col">Images</th>
+                <th scope="col">Address</th>
+                <th scope="col">Area</th>
+                <th scope="col">Distance</th>
+                <th scope="col">Description</th>
+                <th scope="col">Tags</th>
+                <th scope="col">Action</th>
+
+                
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let element of dataSource">
+                <td>{{ element.placeId }}</td>
+                <td>{{ element.placeName }}</td>
+                <td> <app-displayimage [image]="element.images"></app-displayimage></td>
+                <td>{{ element.address }}</td>
+                <td>{{ element.area }}</td>
+                <td>{{ element.distance }}</td>
+                <td>{{ element.description }}</td>
+                <td>{{ element.tags }}</td>
+                <td><div class="text-center">
+                  <button class="btn btn-primary" routerLink="/uploadimage/{{element.placeId}}" variant="text" size="sm">Upload Image</button>
+                </div></td>
+                
+            </tr>
+        </tbody>
+    </table>
+</div>

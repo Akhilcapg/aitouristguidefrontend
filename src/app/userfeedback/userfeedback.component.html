@@ -1,0 +1,17 @@
+<app-usernavbar></app-usernavbar>
+<div class="feed">
+
+    <h4>Feed Back</h4>
+    <form #placeForm="ngForm" (ngSubmit)="addFeedback()" class="form-feed">
+        <div class="form-group">
+            <label for="feedBack">FeedBack:</label>
+            <input type="text" class="form-control" placeholder="Enter feedBack" name="feedBack"
+                [(ngModel)]="feedback.feedbackText">
+
+        </div>
+        <button type="submit" class="btn btn-info">Submit</button>
+        <button type="button" class="btn btn-danger" routerLink="/usertrips">Cancel</button>
+
+    </form>
+
+</div>

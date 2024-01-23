@@ -1,0 +1,12 @@
+.container{
+    position: absolute;
+    top: 120px;
+    left: 300px;
+}
+.table{
+    width: 500px;
+    text-align: center;
+}
+.tourdate{
+    color: blue;
+}

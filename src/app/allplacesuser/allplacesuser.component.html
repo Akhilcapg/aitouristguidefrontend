@@ -1,0 +1,15 @@
+<app-usernavbar></app-usernavbar>
+
+<div class="row">
+    <div *ngFor="let element of dataSource" class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
+<br/>
+        <div class="img-thumbnail" alt="Cinque Terre">
+
+            <app-displayimageuser [image]="element.images"></app-displayimageuser>
+            Place:<small>{{ element.placeName }}</small><br/>
+            Description:<small>{{ element.description }}</small><br/>
+            Address:<small>{{ element.address }}</small><br/>
+            Tag:<small>{{ element.tags }}</small>
+        </div>
+    </div>
+</div>

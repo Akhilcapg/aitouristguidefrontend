@@ -1,0 +1,6 @@
+<app-adminnavbar></app-adminnavbar>
+<div class="upload-img">
+    <h4>Choose photo</h4>
+    <input type="file" accept="image/*" (change)="handleImageChange($event)" class="upload" />
+    <button mat-button (click)="handleImageUpload()" color="primary">Add Product</button>
+  </div>

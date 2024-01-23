@@ -1,0 +1,21 @@
+<div *ngIf="_userservice.isAuthenticatedUser()">
+    <div class="title">
+        <h1>AI Tourist Guide</h1>
+    </div>
+
+    <nav class="navbar navbar-dark bg-primary head-custom1">
+        <nav class="navbar navbar-expand-lg navbar-light bg-primary head-custom">
+
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav">
+                    <a class="nav-item nav-link" routerLink="/allplacesuser">Places</a>
+                    <a class="nav-item nav-link" routerLink="/plantrip">PlanTrip</a>
+                    <a class="nav-item nav-link" routerLink="/usertrips">My Trips</a>
+                    <button  (click)="logout()">Logout</button>
+
+                </div>
+            </div>
+        </nav>
+    </nav>
+
+</div>

@@ -1,0 +1,30 @@
+<app-usernavbar></app-usernavbar>
+
+<div class="container">
+    <div *ngFor="let tour of tours">
+        <h4>Tour ID: {{ tour.tourId }}</h4>
+        <table class="table table-bordered table-hover">
+          <thead>
+            <tr>
+             
+              <th>Tour Date</th>
+              <th>PlaceName</th>
+              <th>Address</th>
+              <th>Description</th>
+              <th>Feed Back</th>
+              <!-- Add more table headers for other properties if needed -->
+            </tr>
+          </thead>
+          <tbody *ngIf="tour.tourDatesPlacesList">
+            <tr *ngFor="let tourDatePlace of tour.tourDatesPlacesList">
+    
+              <td class="tourdate">{{ tourDatePlace.tourDate }}</td>
+              <td>{{ tourDatePlace.placeDto.placeName }}</td>
+              <td>{{ tourDatePlace.placeDto.address }}</td>
+              <td>{{ tourDatePlace.placeDto.description }}</td>
+              <td><button type="button" (click)="giveFeedBack(tourDatePlace.placeDto.placeId)" class="btn btn-info">Feed Back</button></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+</div>
